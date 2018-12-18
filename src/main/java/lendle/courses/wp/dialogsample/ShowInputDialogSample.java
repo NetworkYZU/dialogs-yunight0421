@@ -5,6 +5,8 @@
  */
 package lendle.courses.wp.dialogsample;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author lendle
@@ -67,6 +69,8 @@ public class ShowInputDialogSample extends javax.swing.JFrame {
         // TODO add your handling code here:
         //Use a input dialog to ask user's name
         //display the name in labelHello
+        String name = JOptionPane.showInputDialog(this, "Your name?");
+        labelHello.setText(name);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -76,7 +80,7 @@ public class ShowInputDialogSample extends javax.swing.JFrame {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
         /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
